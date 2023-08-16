@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/petpooja-food-app/static/css/main.26255246.css",
+    "main.js": "/petpooja-food-app/static/js/main.5253c49a.js",
+    "static/js/698.8e7e3842.chunk.js": "/petpooja-food-app/static/js/698.8e7e3842.chunk.js",
+    "static/media/petpooja-pos.png": "/petpooja-food-app/static/media/petpooja-pos.6eacc5e7dca269ab9dd2.png",
+    "index.html": "/petpooja-food-app/index.html",
+    "main.26255246.css.map": "/petpooja-food-app/static/css/main.26255246.css.map",
+    "main.5253c49a.js.map": "/petpooja-food-app/static/js/main.5253c49a.js.map",
+    "698.8e7e3842.chunk.js.map": "/petpooja-food-app/static/js/698.8e7e3842.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.26255246.css",
+    "static/js/main.5253c49a.js"
+  ]
+}

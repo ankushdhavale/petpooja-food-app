@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkreact_namaste=self.webpackChunkreact_namaste||[]).push([[698],{698:function(t,a,e){e.r(a);var s=e(184);a.default=function(){return(0,s.jsx)("a",{href:"https://www.swiggy.com/swiggy-instamart",children:"InstaMart Here"})}}}]);
+//# sourceMappingURL=698.8e7e3842.chunk.js.map
