@@ -6,7 +6,6 @@ const ResturantCard = ({
     cuisines,
     cloudinaryImageId,
     avgRating,
-    user,
 }) => {
     return(
       <div className="p-5 hover:border scroll-smooth ">
@@ -26,7 +25,6 @@ const ResturantCard = ({
               <h3
               className="py-1 text-sm"
               >{costForTwo}</h3>
-              <p>{user.name}</p>
               </div>
              
           </div>

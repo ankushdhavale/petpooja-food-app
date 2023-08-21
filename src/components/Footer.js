@@ -2,8 +2,10 @@ import React from 'react'
 
 const Footer = () => {
   return (
-    <div>
-      Footer
+    <div className="relative bottom-1 ">
+      <div className="items-center text-center text-bottom">
+         Footer
+      </div>
     </div>
   )
 }

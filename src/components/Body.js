@@ -14,12 +14,6 @@ const Body = () => {
   const [filterdRestaurants , setFilterdRestaurants] = useState([]);
   const [searchInput, setSearchInput] = useState("");
 
-  const [user , setUser] = useState({
-    name:"hi dev ",
-    age:20,
-    }) 
-
-
   async function getRestaurants(){  
          const res = await fetch(FETCH_RESTAURANT_URL);
          const json = await res.json();
@@ -72,7 +66,7 @@ const Body = () => {
           filterdRestaurants?.map((restaurant) => {
             return(
             <Link to = {"/restaurant/"+restaurant.info?.id} >
-              <ResturantCard {...restaurant.data} {...restaurant.info} key={restaurant.info?.id} user={user}/>
+              <ResturantCard {...restaurant.data} {...restaurant.info} key={restaurant.info?.id}/>
             </Link>)
           })
         )
