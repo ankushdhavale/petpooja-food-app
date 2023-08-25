@@ -2,6 +2,7 @@ import { NavLink } from "react-router-dom";
 import { useState } from "react";
 import Logo from "../assets/img/petpooja-pos.png";
 import { useSelector } from "react-redux";
+import { BsCartCheck } from "react-icons/bs"
 
 
 const loggedInUser = () =>{
@@ -36,14 +37,22 @@ export const Title = () => {
         <Title/>
         <div>
           <ul className="flex gap-5">
-            <NavLink to = "/"><li>Home</li></NavLink>
-            <NavLink to="/About"><li>About</li></NavLink>
-            <NavLink to="/Contact"><li>Contact</li></NavLink>
-            <NavLink to="/instamart"><li>InstaMart</li></NavLink>
+            <NavLink to = "/"><li
+            className=" hover:bg-orange-400 p-1 px-2 rounded-lg hover:text-white"
+            >Home</li></NavLink>
+            <NavLink to="/About"><li
+            className=" hover:bg-orange-400 p-1 px-2 rounded-lg hover:text-white"
+            >About</li></NavLink>
+            <NavLink to="/Contact"><li
+            className=" hover:bg-orange-400 p-1 px-2 rounded-lg hover:text-white"
+            >Contact</li></NavLink>
+            <NavLink to="/instamart"><li
+             className=" hover:bg-orange-400 p-1 px-2 rounded-lg hover:text-white"
+             >InstaMart</li></NavLink>
             <NavLink to="/Cart"
-                 ><li>Cart
+                             ><li className="flex items-center space-x-1 hover:bg-orange-400 p-1 px-2 rounded-lg hover:text-white"><BsCartCheck/>
                   <span
-                  className="bg-blue-100 rounded-full"
+                  className="bg-blue-100 rounded-full w-4 items-center"
                   > {cartItems?.length}</span></li>
               </NavLink>
           </ul>
@@ -51,10 +60,12 @@ export const Title = () => {
         <div className="">
           {isLoggedInUser ? (
             <button 
+            className="hover:bg-orange-400 p-1 px-2 rounded-lg hover:text-white"
             onClick={() => setIsLoggedInUser(false)}
             >LogOut</button>
             ) : (
             <button  
+            className="hover:bg-orange-400 p-1 px-2 rounded-lg hover:text-white"
             onClick={() => setIsLoggedInUser(true)}
             >Login</button>)
           }

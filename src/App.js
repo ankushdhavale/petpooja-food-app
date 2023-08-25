@@ -5,6 +5,7 @@ import Footer from './components/Footer';
 import { Outlet } from 'react-router-dom';
 import { Provider } from 'react-redux';
 import { store } from './utils/store';
+import {  Toaster } from 'react-hot-toast';
 // import {  ToastContainer }
 function App() {
   return(
@@ -13,7 +14,6 @@ function App() {
           <Header/>
           <Outlet/>
           <Footer/>
-          {/* // <ToastContainer /> */}
        </Provider>
     </div>
   )

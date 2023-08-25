@@ -2,6 +2,7 @@ import React from 'react'
 import { useDispatch, useSelector } from 'react-redux'
 import CartItem from '../components/FoodItem'
 import { clearCart } from '../utils/cartSlice'
+import { toast } from 'react-toastify'
 
 const Cart = () => {
   const cartItem = useSelector(state => state.cart.items)
@@ -10,6 +11,7 @@ const Cart = () => {
 
   const handelClearCart = () => {
     dispatch(clearCart())
+    toast.error("Clear Cart");
   } 
   return (
     <>

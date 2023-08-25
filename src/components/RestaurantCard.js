@@ -8,13 +8,13 @@ const ResturantCard = ({
     avgRating,
 }) => {
     return(
-      <div className="p-5 hover:border scroll-smooth ">
+      <div className="p-4 border scroll-smooth shadow-lg  ">
               <img
               className="w-56" 
               src={CDN_IMG_URL + cloudinaryImageId}/>
               <h2
               className="py-1 text-start  text-md font-semibold w-44"
-              >{name}</h2>
+              >{name.slice(0, 20)}</h2>
               <h4
               className="py-1 text-xs text-gray-500 w-44 text-start"
               >{cuisines.toString().slice(0, 20) + "..."}</h4>
