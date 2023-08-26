@@ -30,7 +30,7 @@ const Body = () => {
     const isOnline = useOnline();
     if(!isOnline){
       return (
-        <h1> Offline, Check your internet connection ?....</h1>
+        <h1 className="items-center justify-center origin-center"> Offline, Check your internet connection ?....</h1>
       )
     }
     
